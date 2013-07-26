@@ -24,6 +24,17 @@
         <module>quest-domain</module>
     </modules>
 
+    <developers>
+        <developer>
+            <id>joel</id>
+            <name>Joel Mahatsri</name>
+            <email>joel@joelmahatsri.com</email>
+            <roles>
+                <role>developer</role>
+            </roles>
+        </developer>
+    </developers>
+
     <dependencyManagement>
         <dependencies>
             <!--Spring dependencies -->
