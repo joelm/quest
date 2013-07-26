@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="guiz-web:war">
+    <output-path>$PROJECT_DIR$/guiz-web/target</output-path>
+    <root id="archive" name="guiz-web.war">
+      <element id="artifact" artifact-name="guiz-web:war exploded" />
+    </root>
+  </artifact>
+</component>

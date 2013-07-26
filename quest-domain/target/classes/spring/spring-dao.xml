@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ This file contains proprietary information of Rule Financial.
+  ~ Copying or reproduction without prior written approval is prohibited.
+  ~
+  ~ <b>Copyright</b> (c) 2011
+  ~ <b>Company</b> Rule Financial
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       ">
+
+  <bean id="hibernateSessionFactory"  class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <property name="dataSource" ref="questDataSource" />
+    <property name="configLocation" value="classpath:hibernate.cfg.xml" />
+      <!--<property name="configLocation" value="WEB-INF/classes/hibernate.cfg.xml"/>-->
+    <property name="hibernateProperties">
+      <props>
+        <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+        <prop key="hibernate.show_sql">${hibernate.sql.show}</prop>
+        <prop key="hibernate.format_sql">${hibernate.sql.format}</prop>
+        <prop key="hibernate.use_sql_comments">${hibernate.sql.comments}</prop>
+      </props>
+    </property>
+    <property name="schemaUpdate" value="${hibernate.schema.update}"/>
+    <property name="namingStrategy">
+      <bean class="org.hibernate.cfg.ImprovedNamingStrategy"/>
+    </property>
+  </bean>
+
+  <bean id="hibTransactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+    <property name="sessionFactory" ref="hibernateSessionFactory" />
+  </bean>
+
+  <!-- jira: TM-32 - Specify the transaction manager used in the Transaction annotation
+       to the field value, e.g. @Transaction(value="hibTransactionManager") -->
+  <tx:annotation-driven /> 
+ 
+  
+ <!-- <bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+    <property name="locations" value="classpath*:sql/sql.properties"/>
+  </bean>-->
+  
+  <!--Hibernate Daos -->
+
+  
+  <!--Spring JDBC Daos -->
+
+</beans>

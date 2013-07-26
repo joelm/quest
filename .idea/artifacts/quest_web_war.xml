@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="quest-web:war">
+    <output-path>$PROJECT_DIR$/quest-web/target</output-path>
+    <root id="archive" name="quest-web.war">
+      <element id="artifact" artifact-name="quest-web:war exploded" />
+    </root>
+  </artifact>
+</component>
