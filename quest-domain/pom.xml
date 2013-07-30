@@ -43,8 +43,18 @@
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+<!--        <dependency>
+            <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>4.2.0.Final</version>
+        </dependency>-->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-tools</artifactId>
+            <version>4.0.0-CR1</version>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -71,7 +81,7 @@
         </dependency>
     </dependencies>
 
-    <build>
+  <!--  <build>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -92,34 +102,78 @@
                                     <implementation>jdbcconfiguration</implementation>
                                 </component>
                             </components>
-                            <!--                            <componentProperties>
+                            &lt;!&ndash;                            <componentProperties>
                                                             <packagename>${packageName}</packagename>
-                                                        </componentProperties>-->
+                                                        </componentProperties>&ndash;&gt;
                         </configuration>
-
                     </execution>
-                    <!--                    <execution>
-                                            <id>Generate hbm.xml mappings</id>
-                                            <phase>generate-sources</phase>
-                                            <configuration>
-                                                <hibernatetool destdir="target/classes">
-                                                    <jdbcconfiguration packagename="it"/>
-                                                    <hbm2hbmxml/>
-                                                    <hbm2cfgxml/>
-
-                                                    <classpath>
-                                                        <path location="target/classes"/>
-                                                    </classpath>
-
-                                                    <hbm2java destdir="target/generated-sources/hibernate">
-                                                        <configuration configurationfile="target/classes/hibernate.cfg.xml"/>
-                                                    </hbm2java>
-                                                </hibernatetool>
-                                            </configuration>
-                                            <goals>
-                                                <goal>run</goal>
-                                            </goals>
-                                        </execution>-->
+                    <execution>
+                        <id>hbm2hbmxml</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>hbm2hbmxml</goal>
+                        </goals>
+                        <inherited>false</inherited>
+                        <configuration>
+                            <components>
+                                <component>
+                                    <name>hbm2hbmxml</name>
+                                    <outputDirectory>target/classes</outputDirectory>
+                                </component>
+                            </components>
+                            &lt;!&ndash;                       <componentProperties>
+                                                       <packagename>${packageName}</packagename>
+                                                   </componentProperties>&ndash;&gt;
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>hbm2java</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>hbm2java</goal>
+                        </goals>
+                        <inherited>false</inherited>
+                        <configuration>
+                            <components>
+                                <component>
+                                    <name>hbm2java</name>
+                                    <implementation>annotationconfiguration</implementation>
+                                    <outputDirectory>src/main/java</outputDirectory>
+                                </component>
+                            </components>
+                            <componentProperties>
+                                &lt;!&ndash;<packagename>${packageName}</packagename>&ndash;&gt;
+                                <configurationfile>target/hibernate3/generated-mappings/hibernate.cfg.xml</configurationfile>
+                                <templatepath>src/main/resources/spring</templatepath>
+                                <ejb3>true</ejb3>
+                                <jdk5>true</jdk5>
+                            </componentProperties>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>hbm2dao</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>hbmtemplate</goal>
+                        </goals>
+                        <inherited>false</inherited>
+                        <configuration>
+                            <components>
+                                <component>
+                                    <name>hbmtemplate</name>
+                                    <implementation>jdbcconfiguration</implementation>
+                                    <outputDirectory>src/main/java</outputDirectory>
+                                </component>
+                            </components>
+                            <componentProperties>
+                                &lt;!&ndash; <packagename>com.corrsolutions.dao.impl</packagename>&ndash;&gt;
+                                <configurationfile>target/hibernate3/generated-mappings/hibernate.cfg.xml</configurationfile>
+                                <templatepath>src/main/resources/spring</templatepath>
+                                <ejb3>true</ejb3>
+                                <jdk5>true</jdk5>
+                            </componentProperties>
+                        </configuration>
+                    </execution>
                 </executions>
 
                 <dependencies>
@@ -133,5 +187,5 @@
             </plugin>
         </plugins>
     </build>
-
+-->
 </project>

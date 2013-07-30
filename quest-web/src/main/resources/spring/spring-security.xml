@@ -9,9 +9,9 @@
 
     <http use-expressions="true">
         <intercept-url pattern="/login*" access="permitAll" />
-       <!-- <intercept-url pattern="/**" access="isAuthenticated()" />-->
+<!--        <intercept-url pattern="/**" access="isAuthenticated()" />-->
         <!--<intercept-url pattern="/login*" access="ROLE_USER" />-->
-       <!-- <intercept-url pattern="/**" access="isAuthenticated()"/>-->
+       <!-- <intercept-url pattern="/secure**" access="isAuthenticated()"/>-->
         <form-login login-page='/login' default-target-url="/welcome" authentication-failure-url="/login?error=true" />
         <logout logout-success-url="/login" />
     </http>

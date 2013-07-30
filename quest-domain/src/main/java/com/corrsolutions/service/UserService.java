@@ -1,14 +1,14 @@
 package com.corrsolutions.service;
 
 
-import com.corrsolutions.domain.User;
+import com.corrsolutions.domain.GameUser;
 
 import java.util.List;
 
 public interface UserService {
 
-    User findByUserName(String userName);
-    void saveUser(User user);
+    GameUser findByUserName(String userName);
+    void saveUser(GameUser user);
     void deleteUser(String userName);
-    List<User> findUsers(String user);
+    List<GameUser> findUsers(String user);
 }

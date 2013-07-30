@@ -15,6 +15,13 @@
         </sourceRoots>
       </configuration>
     </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/spring/applicationContext.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_6" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
@@ -27,17 +34,23 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="quest-domain" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-context:3.2.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.2.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.2.3.RELEASE" level="project" />
+    <orderEntry type="module" module-name="quest-application" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:3.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-beans:3.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context:3.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-aop:3.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:3.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:3.2.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:3.2.3.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework:spring-tx:3.2.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:3.1.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:4.2.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.9" level="project" />
+    <orderEntry type="module" module-name="quest-domain" />
     <orderEntry type="library" name="Maven: org.springframework:spring-test:3.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:4.1.5.Final" level="project" />
     <orderEntry type="library" name="Maven: antlr:antlr:2.7.7" level="project" />
@@ -47,16 +60,28 @@
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.0-api:1.0.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.15.0-GA" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.common:hibernate-commons-annotations:4.0.1.Final" level="project" />
-    <orderEntry type="library" name="Maven: org.hibernate:hibernate-validator:4.2.0.Final" level="project" />
-    <orderEntry type="library" name="Maven: javax.validation:validation-api:1.0.0.GA" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.9" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-entitymanager:4.1.5.Final" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-tools:4.0.0-CR1" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:hibernate-commons-annotations:3.2.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: javax.transaction:jta:1.1" level="project" />
+    <orderEntry type="library" name="Maven: ant:ant:1.6.5" level="project" />
+    <orderEntry type="library" name="Maven: freemarker:freemarker:2.3.8" level="project" />
+    <orderEntry type="library" name="Maven: org.hibernate:jtidy:r8-20060801" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.tycho:org.eclipse.jdt.core:3.8.0.v_C03" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse:text:3.2.0-v20060605-1400" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.core:commands:3.3.0-I20070605-0010" level="project" />
+    <orderEntry type="library" name="Maven: org.eclipse.equinox:common:3.3.0-v20070426" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.eclipse.core:runtime:3.2.0-v20060603" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.eclipse:osgi:3.3.0-v20070530" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.eclipse.core:jobs:3.3.0-v20070423" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.eclipse.equinox:registry:3.3.0-v20070522" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.eclipse.equinox:preferences:3.2.100-v20070522" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.eclipse.core:contenttype:3.2.100-v20070319" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.8.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:3.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-webmvc:3.2.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:javax.servlet-api:3.0.1" level="project" />
     <orderEntry type="library" name="Maven: javax.servlet:jstl:1.2" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:3.1.4.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.security:spring-security-config:3.1.4.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.security:spring-security-taglibs:3.1.4.RELEASE" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.springframework.security:spring-security-web:3.1.4.RELEASE" level="project" />

@@ -1,6 +1,6 @@
 package com.corrsolutions.controller;
 
-import com.corrsolutions.domain.User;
+import com.corrsolutions.domain.GameUser;
 import com.corrsolutions.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,13 +21,13 @@ public class UserController {
 
     @RequestMapping(value = "/createUser", method = RequestMethod.GET)
     public String showUserForm(Model model) {
-        model.addAttribute("user",new User());
+        model.addAttribute("user", new GameUser());
         return "createUser";
     }
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public String saveUser( Model model, User user) {
-/*        User existing = userService.findByUserName(user.getUserName());
+    public String saveUser(Model model, GameUser user) {
+/*        GameUser existing = userService.findByUserName(user.getUserName());
         if (existing != null) {
             model.addAttribute("status", "exist");
             return "createUser";
@@ -39,8 +39,8 @@ public class UserController {
     }
 
     @RequestMapping(value = "/search", method = RequestMethod.POST)
-    public String searchUser(Model model, User user) {
-        List<User> users = userService.findUsers(user.getUserName());
+    public String searchUser(Model model, GameUser user) {
+        List<GameUser> users = userService.findUsers(user.getUserName());
         model.addAttribute("users", users);
         model.addAttribute("search", true);
         return "createUser";
@@ -48,14 +48,14 @@ public class UserController {
 
     @RequestMapping(value = "/edit/{userName}", method = RequestMethod.GET)
     public String updateUser(Model model, @PathVariable String userName) {
-        User user = userService.findByUserName(userName);
+        GameUser user = userService.findByUserName(userName);
         model.addAttribute("user", user);
         return "update";
     }
 
 
     @RequestMapping(value = "/update", method = RequestMethod.POST)
-    public String updateUser( Model model, User user) {
+    public String updateUser(Model model, GameUser user) {
         userService.saveUser(user);
         model.addAttribute("saved", "success");
         return "update";
@@ -65,7 +65,7 @@ public class UserController {
     public String deleteUser(Model model, @PathVariable String userName) {
         userService.deleteUser(userName);
         model.addAttribute("deleted", "success");
-        model.addAttribute("user", new User());
+        model.addAttribute("user", new GameUser());
         return "index";
     }
 

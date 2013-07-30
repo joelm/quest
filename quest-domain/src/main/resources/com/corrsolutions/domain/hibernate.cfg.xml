@@ -13,10 +13,7 @@
         <property name="hibernate.connection.password">quest</property>
 <!--        <property name="hibernate.default_schema">quest</property>-->
 
-        <mapping resource="com.corrsolutions.domain/Answer.hbm.xml" />
-        <mapping resource="com.corrsolutions.domain/Question.hbm.xml" />
-        <mapping resource="com.corrsolutions.domain/GameUser.hbm.xml" />
-        <mapping resource="com.corrsolutions.domain/Game.hbm.xml" />
+        <mapping resource="com.corrsolutions.domain/User.hbm.xml" />
     </session-factory>
 </hibernate-configuration>
 

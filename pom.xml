@@ -20,8 +20,9 @@
     </properties>
 
     <modules>
-        <module>quest-web</module>
+        <module>quest-application</module>
         <module>quest-domain</module>
+        <module>quest-web</module>
     </modules>
 
     <developers>
@@ -37,6 +38,11 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.corrsolutions.quest</groupId>
+                <artifactId>quest-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <!--Spring dependencies -->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -115,6 +121,17 @@
                 <version>4.2.0.Final</version>
             </dependency>
             <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>${hibernate.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-tools</artifactId>
+                <version>4.0.0-CR1</version>
+            </dependency>
+            <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>5.1.9</version>
@@ -165,6 +182,17 @@
                         <target>1.6</target>
                     </configuration>
                 </plugin>
+               <!-- <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <configuration>
+                        <archive>
+                            <manifest>
+                                <addClasspath>true</addClasspath>
+                            </manifest>
+                        </archive>
+                    </configuration>
+                </plugin>-->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>

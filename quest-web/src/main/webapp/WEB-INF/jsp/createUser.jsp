@@ -11,13 +11,22 @@
 		<c:if test="${status == 'exist'}">
 			<p class="error">User Already Exist</p>
 		</c:if>
-		<form:form modelAttribute="user" action="/guiz-web/create" method="post">
+<%--		<form:form modelAttribute="user" action="/quest-web/create" method="post">
 			<form:label path="userName">User Name</form:label><form:input path="userName" />
 			<form:label path="firstName">First Name</form:label><form:input path="firstName" />
 			<form:label path="lastName">Last Name</form:label><form:input path="lastName" />
 			<form:label path="password">Password</form:label><form:password  path="password" />
 			<button type="submit" id="save">Save User</button><button type="submit" id="search">Search User</button>
-		</form:form>
+		</form:form>--%>
+        <form action="/quest-web/create" method="post" >
+            <input type="text" name="userName"/>
+            <input type="email" name="email"/>
+            <input type="text" name="firstName"/>
+            <input type="password" name="lastName"/>
+            <input type="password" name="password"/>
+            <button type="submit" id="save">Save User</button><button type="submit" id="search">Search User</button>
+        </form>
+
 	</div>
 
 	<c:if test="${search == 'true'}">
@@ -38,8 +47,8 @@
 		<td>${current.userName}</td>
 		<td>${current.firstName}</td>
 		<td>${current.lastName}</td>
-		<td><a href="/guiz-web/edit/${current.userName}">Edit</a></td>
-		<td><a href="/guiz-web/delete/${current.userName}">Delete</a></td>
+		<td><a href="/quest-web/edit/${current.userName}">Edit</a></td>
+		<td><a href="/quest-web/delete/${current.userName}">Delete</a></td>
 		</tr>
 	</c:forEach>
 	</table>

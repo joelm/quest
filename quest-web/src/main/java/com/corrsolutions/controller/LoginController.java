@@ -1,6 +1,5 @@
 package com.corrsolutions.controller;
 
-import com.corrsolutions.domain.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;

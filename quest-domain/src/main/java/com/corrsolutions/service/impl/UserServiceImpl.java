@@ -1,7 +1,7 @@
 package com.corrsolutions.service.impl;
 
-import com.corrsolutions.dao.UserDao;
-import com.corrsolutions.domain.User;
+import com.corrsolutions.dao.GameUserDao;
+import com.corrsolutions.domain.GameUser;
 import com.corrsolutions.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserDao userDao;
+    private GameUserDao gameUserDao;
 
 /*    @Override
     public User findByUserId(Integer userId) {
@@ -24,8 +24,8 @@ public class UserServiceImpl implements UserService {
     }*/
 
     @Override
-    public User findByUserName(String userName) {
-        return userDao.findById(userName);
+    public GameUser findByUserName(String userName) {
+        return gameUserDao.findById(userName);
     }
 
 /*    @Override
@@ -46,21 +46,21 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional(readOnly = false)
-    public void saveUser(User user) {
-        userDao.saveUser(user);
+    public void saveUser(GameUser user) {
+        gameUserDao.saveUser(user);
     }
 
     @Override
     @Transactional(readOnly = false)
     public void deleteUser(String userName) {
-        User user = userDao.findById(userName);
+        GameUser user = gameUserDao.findById(userName);
         if (user != null) {
-            userDao.delete(user);
+            gameUserDao.delete(user);
         }
     }
 
     @Override
-    public List<User> findUsers(String user) {
-        return userDao.findUsers(user);
+    public List<GameUser> findUsers(String user) {
+        return gameUserDao.findUsers(user);
     }
 }

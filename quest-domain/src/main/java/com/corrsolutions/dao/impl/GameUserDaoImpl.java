@@ -1,7 +1,8 @@
 package com.corrsolutions.dao.impl;
 
-import com.corrsolutions.dao.UserDao;
-import com.corrsolutions.domain.User;
+
+import com.corrsolutions.dao.GameUserDao;
+import com.corrsolutions.domain.GameUser;
 import org.hibernate.criterion.MatchMode;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
@@ -9,19 +10,19 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class UserDaoImpl extends AbstractDaoImpl<User, String> implements UserDao {
+public class GameUserDaoImpl extends AbstractDaoImpl<GameUser, String> implements GameUserDao {
 
-    protected UserDaoImpl() {
-        super(User.class);
+    protected GameUserDaoImpl() {
+        super(GameUser.class);
     }
 
     @Override
-    public void saveUser(User user) {
+    public void saveUser(GameUser user) {
         saveOrUpdate(user);
     }
 
     @Override
-    public List<User> findUsers(String userName) {
+    public List<GameUser> findUsers(String userName) {
         return findByCriteria(Restrictions.like("userName", userName, MatchMode.START));
     }
 }

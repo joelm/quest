@@ -4,9 +4,9 @@
     <list default="true" id="0f40d86c-dfab-4fc6-bedf-c2baf726b081" name="Default" comment="" />
     <ignored path="guiz.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/pom.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374852387171" ignored="false" />
-    <file path="/web.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374847566582" ignored="false" />
-    <file path="/dev-mysql.properties" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374848339121" ignored="false" />
+    <file path="/pom.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375109596351" ignored="false" />
+    <file path="/web.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375180253596" ignored="false" />
+    <file path="/dev-mysql.properties" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375178594357" ignored="false" />
     <file path="/jetty-realm.properties" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1373983850749" ignored="false" />
     <file path="/jetty-logback.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1373983878435" ignored="false" />
     <file path="/jetty.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374848556042" ignored="false" />
@@ -15,35 +15,39 @@
     <file path="$PROJECT_DIR$/guiz-web/src/main/java/test/dao/impl/UserDaoImpl.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1373985920612" ignored="false" />
     <file path="$PROJECT_DIR$/guiz-web/src/main/java/test/controller/UserController.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1373985920612" ignored="false" />
     <file path="$PROJECT_DIR$/guiz-web/src/main/java/test/dao/impl/AbstractDaoImpl.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1373985920612" ignored="false" />
-    <file path="/fragment.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374765874514" ignored="false" />
+    <file path="/fragment.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375113276245" ignored="false" />
     <file path="/index.jsp" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1373986672491" ignored="false" />
     <file path="/footer.jsp" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1373986722080" ignored="false" />
     <file path="/header.jsp" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1373986784962" ignored="false" />
     <file path="/update.jsp" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1373986805189" ignored="false" />
     <file path="/game_db_create.sql" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374758888039" ignored="false" />
-    <file path="/Dummy.txt" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374847840122" ignored="false" />
-    <file path="/spring-security.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374591647339" ignored="false" />
-    <file path="/applicationContext.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374600146145" ignored="false" />
+    <file path="/Dummy.txt" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375183878040" ignored="false" />
+    <file path="/spring-security.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375179410998" ignored="false" />
+    <file path="/applicationContext.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375173600538" ignored="false" />
     <file path="/mainmenu.jsp" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374590775600" ignored="false" />
     <file path="/hello.jsp" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374588402279" ignored="false" />
     <file path="/guiz-servlet.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374594736621" ignored="false" />
     <file path="/database.properties" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374848392667" ignored="false" />
     <file path="/User.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374846570988" ignored="false" />
     <file path="$PROJECT_DIR$/guiz-domain/src/main/java/corrsolutions/service/impl/UserServiceImpl.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374765810060" ignored="false" />
-    <file path="/hibernate.cfg.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374848473240" ignored="false" />
+    <file path="/hibernate.cfg.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375086487289" ignored="false" />
     <file path="/Consultant.hbm.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374766790060" ignored="false" />
-    <file path="/application-context.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374768474070" ignored="false" />
+    <file path="/application-context.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375106703875" ignored="false" />
     <file path="/spring-datasource.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374848521816" ignored="false" />
-    <file path="/UserServiceImpl.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374842384554" ignored="false" />
-    <file path="/UserService.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374835289168" ignored="false" />
+    <file path="/UserServiceImpl.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375106931407" ignored="false" />
+    <file path="/UserService.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375103805872" ignored="false" />
     <file path="/AbstractDaoImpl.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374844853428" ignored="false" />
     <file path="/AbstractDao.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374844867165" ignored="false" />
     <file path="/hibernateContext.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374846346531" ignored="false" />
     <file path="/User.hbm.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374848492444" ignored="false" />
-    <file path="/a.dummy" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374852928912" ignored="false" />
+    <file path="/a.dummy" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375182598407" ignored="false" />
     <file path="$PROJECT_DIR$/guiz-web/target/guiz-web/WEB-INF/jsp/update.jsp" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374847504755" ignored="false" />
-    <file path="/spring-dao.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374848504464" ignored="false" />
-    <file path="$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/service/impl/UserServiceImpl.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374849041007" ignored="false" />
+    <file path="/spring-dao.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375112793273" ignored="false" />
+    <file path="/UserController.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375189781045" ignored="false" />
+    <file path="/GameUserDao.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375113034507" ignored="false" />
+    <file path="/GameUserDaoImpl.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375103723734" ignored="false" />
+    <file path="/createUser.jsp" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375192659444" ignored="false" />
+    <file path="/GameUser.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375189695655" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +62,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -96,7 +99,7 @@
       </breakpoint>
     </breakpoint_any>
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/LoginController.java" line="24" class="com.corrsolutions.controller.LoginController" package="com.corrsolutions.controller">
+      <breakpoint url="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/LoginController.java" line="23" class="com.corrsolutions.controller.LoginController" package="com.corrsolutions.controller">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -111,7 +114,37 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/LoginController.java" line="33" class="com.corrsolutions.controller.LoginController" package="com.corrsolutions.controller">
+      <breakpoint url="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/LoginController.java" line="32" class="com.corrsolutions.controller.LoginController" package="com.corrsolutions.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/UserController.java" line="23" class="com.corrsolutions.controller.UserController" package="com.corrsolutions.controller">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/UserController.java" line="34" class="com.corrsolutions.controller.UserController" package="com.corrsolutions.controller">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -127,6 +160,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -136,28 +170,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="createUser.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quest-web/src/main/webapp/WEB-INF/jsp/createUser.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="57" selection-start="1368" selection-end="1368" vertical-scroll-proportion="-18.307692">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quest-domain/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="38" selection-start="2874" selection-end="2884" vertical-scroll-proportion="0.66533864">
+            <state line="129" column="36" selection-start="5290" selection-end="5298" vertical-scroll-proportion="0.1632653">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="UserController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="47" selection-start="4603" selection-end="4612" vertical-scroll-proportion="0.0">
+            <state line="28" column="53" selection-start="930" selection-end="934" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quest-web/src/main/resources/database.properties">
+      <file leaf-file-name="JdkDynamicAopProxy.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="42" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+            <state line="226" column="0" selection-start="8561" selection-end="8561" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameUser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/domain/GameUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="80" column="29" selection-start="2021" selection-end="2032" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="7" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -176,22 +237,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/quest-web/src/main/webapp/WEB-INF/jsp/createUser.jsp" />
-        <option value="$PROJECT_DIR$/quest-web/src/main/webapp/WEB-INF/jsp/mainmenu.jsp" />
-        <option value="$PROJECT_DIR$/quest-domain/src/main/resources/com/corrsolutions/domain/User.hbm.xml" />
-        <option value="$PROJECT_DIR$/quest-domain/src/main/resources/spring/spring-datasource.xml" />
-        <option value="$PROJECT_DIR$/quest-web/src/main/resources/jetty.xml" />
-        <option value="$PROJECT_DIR$/quest-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/quest-web/pom.xml" />
-        <option value="$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/domain/User.java" />
-        <option value="$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/quest-domain/src/main/resources/sql/game_db_create.sql" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/quest-web/src/main/resources/database.properties" />
-        <option value="$PROJECT_DIR$/quest-domain/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/dao/impl/UserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/quest-application/src/main/resources/spring/spring-dao.xml" />
         <option value="$PROJECT_DIR$/quest-domain/src/main/resources/spring/application-context.xml" />
-        <option value="$PROJECT_DIR$/quest-domain/src/main/resources/spring/spring-dao.xml" />
-        <option value="$PROJECT_DIR$/quest-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/dev-mysql.properties" />
+        <option value="$PROJECT_DIR$/quest-web/src/main/resources/spring/spring-security.xml" />
+        <option value="$PROJECT_DIR$/quest-web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/quest-web/src/main/resources/spring/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/quest-domain/src/main/resources/sql/game_db_create.sql" />
+        <option value="$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/dao/impl/GameUserDaoImpl.java" />
+        <option value="$PROJECT_DIR$/quest-domain/src/main/resources/com/corrsolutions/domain/GameUser.hbm.xml" />
+        <option value="$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/domain/GameUser.java" />
+        <option value="$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/quest-web/src/main/webapp/WEB-INF/jsp/createUser.jsp" />
       </list>
     </option>
   </component>
@@ -201,6 +262,20 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="quest" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -239,7 +314,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,177 +346,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest-domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest-domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest-domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest-domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="guiz" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quest-domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-domain\src\main\resources\spring" />
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-domain\src\main\resources" />
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-domain\src\main\java" />
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-web\src\main\webapp\static\js" />
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-web\src\main\webapp\static\img" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.corrsolutions.entity" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-web\src\main\resources" />
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-web\src\main\webapp\WEB-INF" />
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-domain\src\main\resources\com\corrsolutions\domain" />
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-web\src\main\webapp\WEB-INF\jsp\common" />
-      <recent name="C:\_joel\dev\IdeaProjects\guiz\guiz-web\src\main\webapp\WEB-INF\jsp" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-domain\src\main\resources\spring" />
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-web\src\main\java\com\corrsolutions" />
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-application\src\main\resources\spring" />
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-web\src\main\java\com\corrsolutions\controller\impl" />
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-domain\src\main\java\com\corrsolutions\service\impl" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.corrsolutions.domain" />
       <recent name="com.corrsolutions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-web\src\main\resources\spring" />
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-domain\src\main\resources\spring" />
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-application\src\main\resources\spring" />
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-domain\src\main\resources" />
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-web\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.quest-web [jetty:run]">
@@ -482,19 +435,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -521,6 +461,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -658,7 +611,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32475883" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48911223" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25075758" sideWeight="0.25709516" order="1" side_tool="true" content_ui="tabs" />
@@ -669,14 +622,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17727272" sideWeight="0.48576215" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17727272" sideWeight="0.5929648" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23257576" sideWeight="0.48576215" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5142379" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26818183" sideWeight="0.5929648" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40703517" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32328308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18927974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -745,40 +698,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/quest-web/src/main/resources/jetty.xml">
+    <entry file="file://$PROJECT_DIR$/quest-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="42" selection-start="228" selection-end="228" vertical-scroll-proportion="0.5409091" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="59" selection-start="497" selection-end="497" vertical-scroll-proportion="0.1583851" />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="69" selection-start="601" selection-end="601" vertical-scroll-proportion="-0.10691824">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="50" selection-start="1964" selection-end="1964" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="54" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0" />
+        <state line="176" column="54" selection-start="6937" selection-end="6943" vertical-scroll-proportion="0.04607046" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quest-domain/src/main/resources/sql/game_db_create.sql">
@@ -786,75 +708,97 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="39" selection-start="685" selection-end="685" vertical-scroll-proportion="1.8590308" />
+        <state line="24" column="6" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quest-web/src/main/resources/spring/hibernateContext.xml">
+    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/domain/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="48" selection-start="880" selection-end="894" vertical-scroll-proportion="0.6">
+        <state line="24" column="13" selection-start="674" selection-end="674" vertical-scroll-proportion="0.030909091">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quest-web/pom.xml">
+    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/dao/impl/GameUserDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="29" selection-start="3892" selection-end="3897" vertical-scroll-proportion="-5.2">
+        <state line="21" column="67" selection-start="554" selection-end="554" vertical-scroll-proportion="0.47486034">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/resources/com/corrsolutions/domain/User.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/quest-web/src/main/webapp/WEB-INF/jsp/common/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="112" selection-end="140" vertical-scroll-proportion="0.19883041">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.8811475">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/resources/spring/spring-dao.xml">
+    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/dao/GameUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="74" selection-start="995" selection-end="995" vertical-scroll-proportion="0.53817505">
+        <state line="10" column="36" selection-start="240" selection-end="240" vertical-scroll-proportion="0.34085214" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/3.2.3.RELEASE/spring-context-3.2.3.RELEASE.jar!/org/springframework/validation/AbstractPropertyBindingResult.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="1442" selection-end="1442" vertical-scroll-proportion="1.2371795" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="44" selection-start="754" selection-end="762" vertical-scroll-proportion="0.38688526">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/resources/spring/spring-datasource.xml">
+    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="69" selection-start="664" selection-end="664" vertical-scroll-proportion="0.43164062">
+        <state line="9" column="43" selection-start="171" selection-end="179" vertical-scroll-proportion="0.36503068" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/java/com/corrsolutions/domain/GameUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="80" column="29" selection-start="2021" selection-end="2032" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/resources/hibernate.cfg.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/3.2.3.RELEASE/spring-aop-3.2.3.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="83" selection-start="530" selection-end="530" vertical-scroll-proportion="0.2977233">
+        <state line="226" column="0" selection-start="8561" selection-end="8561" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quest-domain/src/main/resources/spring/application-context.xml">
+    <entry file="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="111" selection-start="368" selection-end="368" vertical-scroll-proportion="0.1827957">
+        <state line="23" column="7" selection-start="709" selection-end="709" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quest-web/src/main/resources/database.properties">
+    <entry file="file://$PROJECT_DIR$/quest-web/src/main/java/com/corrsolutions/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="42" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+        <state line="28" column="53" selection-start="930" selection-end="934" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="47" selection-start="4603" selection-end="4612" vertical-scroll-proportion="0.0">
+        <state line="194" column="48" selection-start="7275" selection-end="7730" vertical-scroll-proportion="0.82653064">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-web/src/main/webapp/WEB-INF/jsp/createUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="57" selection-start="1368" selection-end="1368" vertical-scroll-proportion="-18.307692">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quest-domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="38" selection-start="2874" selection-end="2884" vertical-scroll-proportion="0.66533864">
+        <state line="129" column="36" selection-start="5290" selection-end="5298" vertical-scroll-proportion="0.1632653">
           <folding />
         </state>
       </provider>

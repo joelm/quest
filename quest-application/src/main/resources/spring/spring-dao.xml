@@ -40,7 +40,9 @@
   </bean>-->
   
   <!--Hibernate Daos -->
-
+  <bean id="gameUserDao" class="com.corrsolutions.dao.impl.GameUserDaoImpl">
+      <constructor-arg name="sessionFactory" ref="hibernateSessionFactory" />
+  </bean>
   
   <!--Spring JDBC Daos -->
 
