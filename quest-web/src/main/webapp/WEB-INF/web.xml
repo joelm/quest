@@ -38,6 +38,7 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
+            /WEB-INF/quest-servlet.xml,
             classpath:/spring/applicationContext.xml,
             classpath:/spring/hibernateContext.xml,
             classpath:/spring/spring-security.xml

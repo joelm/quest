@@ -10,20 +10,19 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--   <import resource="classpath*:/META-INF/spring/*.xml" />-->
-    <!--    <import resource="spring-security.xml"/>-->
-    <!-- <import resource="classpath:src/main/resources/spring/application-context.xml"/>-->
-    <!--<import resource="classpath:src/main/resources/spring/spring-dao.xml"/>-->
-
-<!--
     <context:component-scan base-package="com.corrsolutions"/>
--->
 
-    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
+    <mvc:annotation-driven />
 
-    <!--   <mvc:view-controller path="/login" view-name="login" />-->
-    <!-- <mvc:view-controller path="/protected" view-name="protected" />-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/" />
+        <property name="suffix" value=".jsp" />
+    </bean>
 
-
+     <!--<bean class="org.springframework.context.support.ResourceBundleMessageSource" id="messageSource">
+        <property name="basenames">
+        <list><value>mymessages</value></list>
+        </property>
+    </bean> -->
 
 </beans>
