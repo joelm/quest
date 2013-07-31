@@ -1,0 +1,48 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+
+    <formats>
+        <format>tar.gz</format>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+    <fileSets>
+        <fileSet>
+            <directory>${project.build.directory}/appassembler</directory>
+            <outputDirectory>/</outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>src/main/config</directory>
+            <outputDirectory>conf</outputDirectory>
+        </fileSet>
+    </fileSets>
+    <files>
+        <file>
+            <source>src/main/external/README.txt</source>
+            <outputDirectory>/</outputDirectory>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>src/main/external/files_to_import/Countries.txt</source>
+            <outputDirectory>/files_to_import</outputDirectory>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>src/main/external/files_to_import/cities.txt</source>
+            <outputDirectory>/files_to_import</outputDirectory>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>src/main/external/files_to_import/Regions.txt</source>
+            <outputDirectory>/files_to_import</outputDirectory>
+            <filtered>true</filtered>
+        </file>
+        <file>
+            <source>src/main/external/files_to_import/Dmas.txt</source>
+            <outputDirectory>/files_to_import</outputDirectory>
+            <filtered>true</filtered>
+        </file>
+    </files>
+
+</assembly>

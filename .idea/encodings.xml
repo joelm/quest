@@ -4,6 +4,9 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quest-application" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/quest-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quest-scripts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/quest-scripts/src/main/external/files_to_import" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/quest-scripts/src/main/external/files_to_import/Countries.txt" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/quest-web" charset="UTF-8" />
   </component>
 </project>

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/quest.iml" filepath="$PROJECT_DIR$/quest.iml" />
       <module fileurl="file://$PROJECT_DIR$/quest-application/quest-application.iml" filepath="$PROJECT_DIR$/quest-application/quest-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/quest-domain/quest-domain.iml" filepath="$PROJECT_DIR$/quest-domain/quest-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quest-scripts/quest-scripts.iml" filepath="$PROJECT_DIR$/quest-scripts/quest-scripts.iml" />
       <module fileurl="file://$PROJECT_DIR$/quest-web/quest-web.iml" filepath="$PROJECT_DIR$/quest-web/quest-web.iml" />
     </modules>
   </component>

@@ -1,0 +1,37 @@
+<!--
+  ~ This file contains proprietary information of Rule Financial.
+  ~ Copying or reproduction without prior written approval is prohibited.
+  ~
+  ~ <b>Copyright</b> (c) 2013
+  ~ <b>Company</b> Rule Financial
+  -->
+
+<configuration>
+
+  <!-- Insert the current time formatted as "yyyyMMdd'T'HHmmss" under
+       the key "domain" into the logger context. This value will be
+       available to all subsequent configuration elements. -->
+  <timestamp key="domain" datePattern="yyyyMMdd'T'HHmmss"/>
+
+  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+    <file>orchestra-scripts-${domain}.log</file>
+
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>%date %level [%thread] %logger{10} [%file:%line] %msg%n</Pattern>
+    </layout>
+  </appender>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <layout class="ch.qos.logback.classic.PatternLayout">
+      <Pattern>%d %5level - %m%n</Pattern>
+    </layout>
+  </appender>
+
+<!--  <logger name="com.rulefinancial" level="INFO"/>-->
+
+  <root level="INFO">
+    <appender-ref ref="FILE" />
+    <appender-ref ref="STDOUT"/>
+  </root>
+
+</configuration>

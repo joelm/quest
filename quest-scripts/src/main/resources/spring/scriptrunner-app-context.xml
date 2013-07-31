@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ This file contains proprietary information of Rule Financial.
+  ~ Copying or reproduction without prior written approval is prohibited.
+  ~
+  ~ <b>Copyright</b> (c) 2013
+  ~ <b>Company</b> Corr Solutions
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--<import resource="classpath:spring/spring-services.xml"/>-->
+
+    <bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations" value="classpath:quest.properties"/>
+    </bean>
+
+    <bean class="com.corrsolutions.quest.script.ScriptRunner">
+        <property name="properties" ref="properties"/>
+        <constructor-arg>
+            <list>
+                <bean id="loadCountriesScript"
+                      class="com.corrsolutions.quest.script.impl.LoadCountriesScript">
+                    <property name="properties" ref="properties"/>
+                    <property name="name" value="LoadCountriesScript"/>
+                    <property name="description" value="Loading geodata countries into DB"/>
+                </bean>
+
+            </list>
+        </constructor-arg>
+    </bean>
+
+</beans>
