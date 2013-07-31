@@ -7,13 +7,29 @@
                         http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
 
-    <http use-expressions="true">
-        <intercept-url pattern="/login*" access="permitAll" />
+
+    <http >
+<!--        <intercept-url pattern="/login*" access="permitAll" />-->
 <!--        <intercept-url pattern="/**" access="isAuthenticated()" />-->
         <!--<intercept-url pattern="/login*" access="ROLE_USER" />-->
        <!-- <intercept-url pattern="/secure**" access="isAuthenticated()"/>-->
-        <form-login login-page='/login' default-target-url="/welcome" authentication-failure-url="/login?error=true" />
-        <logout logout-success-url="/login" />
+<!--        <form-login login-page='/login' default-target-url="/welcome" authentication-failure-url="/login?error=true" />
+        <logout logout-success-url="/login" />-->
+
+        <intercept-url pattern="/" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <intercept-url pattern="/index" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+       <!-- <intercept-url pattern="/hello.htm" access="IS_AUTHENTICATED_ANONYMOUSLY"/>-->
+        <intercept-url pattern="/login.jsp" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+        <intercept-url pattern="/switchuser" access="ROLE_SUPERVISOR"/>
+        <intercept-url pattern="/j_spring_security_switch_user" access="ROLE_SUPERVISOR"/>
+        <intercept-url pattern="/**" access="ROLE_USER"/>
+
+        <form-login login-page="/login.jsp" default-target-url="/welcome"
+                    authentication-failure-url="/login.jsp?login_error=1"/>
+        <http-basic/>
+        <logout logout-success-url="/index"/>
+        <remember-me />
+      <!--  <custom-filter ref="switchUserProcessingFilter" position="SWITCH_USER_FILTER"/>-->
     </http>
 
     <authentication-manager>
@@ -25,5 +41,7 @@
             </user-service>
         </authentication-provider>
     </authentication-manager>
+
+    <b:bean id="loggerListener" class="org.springframework.security.authentication.event.LoggerListener"/>
 
 </b:beans>
