@@ -40,7 +40,7 @@
     <file path="/AbstractDao.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374844867165" ignored="false" />
     <file path="/hibernateContext.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374846346531" ignored="false" />
     <file path="/User.hbm.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374848492444" ignored="false" />
-    <file path="/a.dummy" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375438067353" ignored="false" />
+    <file path="/a.dummy" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375451498631" ignored="false" />
     <file path="$PROJECT_DIR$/guiz-web/target/guiz-web/WEB-INF/jsp/update.jsp" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1374847504755" ignored="false" />
     <file path="/spring-dao.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375365675247" ignored="false" />
     <file path="/UserController.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375189781045" ignored="false" />
@@ -53,7 +53,7 @@
     <file path="/README.txt" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375267154396" ignored="false" />
     <file path="/quest.properties" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375372054420" ignored="false" />
     <file path="/archive.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375267227887" ignored="false" />
-    <file path="/AbstractScript.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375267808948" ignored="false" />
+    <file path="/AbstractScript.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375440771747" ignored="false" />
     <file path="/Script.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375267835980" ignored="false" />
     <file path="/ScriptRunner.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375267848013" ignored="false" />
     <file path="/LoadCiountriesScript.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375268181897" ignored="false" />
@@ -72,9 +72,14 @@
     <file path="/CountryDao.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375355524450" ignored="false" />
     <file path="/CRUDDao.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375355366458" ignored="false" />
     <file path="/spring-services.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375439206142" ignored="false" />
-    <file path="/sql.properties" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375364536486" ignored="false" />
+    <file path="/sql.properties" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375441040891" ignored="false" />
     <file path="/CountrySpringJdbcDao.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375363387600" ignored="false" />
     <file path="/quest-dev.properties" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375370392168" ignored="false" />
+    <file path="/AbstractScriptRunnerTest.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375440883383" ignored="false" />
+    <file path="/datasource.properties" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375441113448" ignored="false" />
+    <file path="/test-script-datasource.xml" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375441211369" ignored="false" />
+    <file path="/ScriptRunnerTest.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375441441236" ignored="false" />
+    <file path="/Test.java" changelist="0f40d86c-dfab-4fc6-bedf-c2baf726b081" time="1375449152895" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +94,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -173,6 +177,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -182,28 +187,48 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="QuestionGeneratorScript.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/java/com/corrsolutions/quest/script/impl/QuestionGeneratorScript.java">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quest-scripts/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="572" selection-end="595" vertical-scroll-proportion="0.0">
+            <state line="75" column="21" selection-start="2755" selection-end="2771" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scriptrunner-app-context.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/resources/spring/scriptrunner-app-context.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="72" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0">
+            <state line="197" column="47" selection-start="7921" selection-end="7928" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datasource.properties" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/config/datasource.properties">
+      <file leaf-file-name="ScriptRunnerTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/quest-scripts/src/test/java/com/corrsolutions/quest/script/ScriptRunnerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="70" selection-start="928" selection-end="928" vertical-scroll-proportion="0.73913044">
+            <state line="16" column="18" selection-start="373" selection-end="380" vertical-scroll-proportion="-1.9854015">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/java/com/corrsolutions/quest/geodata/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="72" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scriptrunner-datasource.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/resources/spring/scriptrunner-datasource.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="29" selection-start="541" selection-end="556" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -222,22 +247,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/quest-application/src/main/resources/spring/spring-datasource.xml" />
-        <option value="$PROJECT_DIR$/quest-application/src/main/resources/spring/spring-dao.xml" />
-        <option value="$PROJECT_DIR$/quest-application/pom.xml" />
-        <option value="$PROJECT_DIR$/quest-domain/pom.xml" />
-        <option value="$PROJECT_DIR$/quest-config/pom.xml" />
-        <option value="$PROJECT_DIR$/quest-web/pom.xml" />
-        <option value="$PROJECT_DIR$/quest-config/src/main/resources/config/quest-dev.properties" />
-        <option value="$PROJECT_DIR$/quest-scripts/src/main/config/quest.properties" />
-        <option value="$PROJECT_DIR$/quest-scripts/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/quest-scripts/src/main/resources/spring/scriptrunner-datasource.xml" />
         <option value="$PROJECT_DIR$/quest-scripts/src/main/resources/spring.properties" />
         <option value="$PROJECT_DIR$/quest-application/src/main/resources/spring/spring-services.xml" />
         <option value="$PROJECT_DIR$/quest-scripts/src/main/java/com/corrsolutions/quest/script/impl/QuestionGeneratorScript.java" />
         <option value="$PROJECT_DIR$/quest-scripts/src/main/resources/spring/scriptrunner-app-context.xml" />
         <option value="$PROJECT_DIR$/quest-scripts/src/main/config/datasource.properties" />
+        <option value="$PROJECT_DIR$/quest-scripts/src/main/java/com/corrsolutions/quest/script/AbstractScript.java" />
+        <option value="$PROJECT_DIR$/quest-scripts/src/test/java/com/corrsolutions/quest/script/RunScriptsLocally.java" />
+        <option value="$PROJECT_DIR$/quest-scripts/src/test/resources/sql/sql.properties" />
+        <option value="$PROJECT_DIR$/quest-scripts/src/test/resources/datasource.properties" />
+        <option value="$PROJECT_DIR$/quest-scripts/src/test/resources/spring/test-script-datasource.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/quest-scripts/pom.xml" />
+        <option value="$PROJECT_DIR$/quest-scripts/src/test/java/com/corrsolutions/quest/script/AbstractScriptRunnerTest.java" />
+        <option value="$PROJECT_DIR$/quest-scripts/src/main/java/com/corrsolutions/quest/geodata/Test.java" />
+        <option value="$PROJECT_DIR$/quest-scripts/src/test/java/com/corrsolutions/quest/script/ScriptRunnerTest.java" />
       </list>
     </option>
   </component>
@@ -316,8 +341,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -336,8 +359,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quest-scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -356,23 +395,23 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.corrsolutions.entity" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-scripts\src\test\resources" />
+      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-scripts\src\test\java\com\corrsolutions\quest\script" />
       <recent name="C:\_joel\dev\IdeaProjects\quest\quest-domain\src\main\resources\sql" />
       <recent name="C:\_joel\dev\IdeaProjects\quest\quest-scripts\src\main\external\files_to_import" />
       <recent name="C:\_joel\dev\IdeaProjects\quest\quest-scripts\src\main\resources" />
-      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-scripts\src\main\java\com\corrsolutions\quest" />
-      <recent name="C:\_joel\dev\IdeaProjects\quest\quest-scripts\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\_joel\dev\IdeaProjects\quest\quest-domain\src\main\resources\com\corrsolutions" />
@@ -387,7 +426,7 @@
       <recent name="com.corrsolutions" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuestionGeneratorScript">
+  <component name="RunManager" selected="Application.Test">
     <configuration default="false" name="QuestionGeneratorScript" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -407,6 +446,62 @@
       <module name="quest-scripts" />
       <envs />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ScriptRunnerTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.corrsolutions.quest.script.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="quest-scripts" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.corrsolutions.quest.script" />
+      <option name="MAIN_CLASS_NAME" value="com.corrsolutions.quest.script.ScriptRunnerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.corrsolutions.quest.geodata.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.corrsolutions.quest.geodata.Test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="quest-scripts" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
@@ -446,19 +541,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -485,6 +567,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -557,13 +652,17 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Maven.quest-web [jetty:run]" />
       <item index="1" class="java.lang.String" itemvalue="Application.QuestionGeneratorScript" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ScriptRunnerTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Test" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.QuestionGeneratorScript" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.Test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ScriptRunnerTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.QuestionGeneratorScript" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -626,6 +725,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43551087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48911223" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -639,14 +739,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32888147" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17651515" sideWeight="0.42881072" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17651515" sideWeight="0.5025126" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2659091" sideWeight="0.42881072" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5711893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2659091" sideWeight="0.5025126" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49748743" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43551087" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
@@ -716,104 +815,98 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/quest-web/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="83" selection-start="1398" selection-end="1398" vertical-scroll-proportion="1.5280899" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-web/src/main/resources/spring/hibernateContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="61" selection-start="4809" selection-end="4809" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-config/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-scripts/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="40" selection-start="3826" selection-end="3838" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="47" selection-start="837" selection-end="856" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-config/src/main/resources/config/quest-dev.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/resources/spring/scriptrunner-datasource.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="64" selection-start="888" selection-end="888" vertical-scroll-proportion="1.2142857">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-application/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="58" selection-start="2337" selection-end="2354" vertical-scroll-proportion="-20.36">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-application/src/main/resources/spring/application-context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-application/src/main/resources/spring/spring-services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="33" selection-start="251" selection-end="251" vertical-scroll-proportion="0.3923077">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/java/com/corrsolutions/quest/script/ScriptRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="66" selection-start="1173" selection-end="1190" vertical-scroll-proportion="0.24161074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/resources/spring.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/java/com/corrsolutions/quest/script/AbstractScript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="67" selection-start="547" selection-end="547" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/test/resources/sql/sql.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="27" selection-start="167" selection-end="167" vertical-scroll-proportion="0.11908932" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/test/resources/datasource.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="54" selection-start="571" selection-end="571" vertical-scroll-proportion="0.6507177" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/resources/spring/scriptrunner-app-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="72" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.9591837">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/java/com/corrsolutions/quest/script/impl/QuestionGeneratorScript.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="572" selection-end="595" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="17" column="36" selection-start="572" selection-end="595" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/resources/spring/scriptrunner-app-context.xml">
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/test/resources/spring/test-script-datasource.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="72" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="81" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/config/datasource.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="70" selection-start="928" selection-end="928" vertical-scroll-proportion="0.73913044">
+        <state line="21" column="0" selection-start="499" selection-end="672" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/resources/spring/scriptrunner-datasource.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="541" selection-end="556" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/test/java/com/corrsolutions/quest/script/AbstractScriptRunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="22" selection-start="894" selection-end="894" vertical-scroll-proportion="0.30353817" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="197" column="47" selection-start="7921" selection-end="7928" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/test/java/com/corrsolutions/quest/script/RunScriptsLocally.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="60" selection-start="447" selection-end="447" vertical-scroll-proportion="0.43342775" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="21" selection-start="2755" selection-end="2771" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_45/src.zip!/java/net/Socket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="29" selection-start="6367" selection-end="6371" vertical-scroll-proportion="0.9707113">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/main/java/com/corrsolutions/quest/geodata/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="72" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quest-scripts/src/test/java/com/corrsolutions/quest/script/ScriptRunnerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="18" selection-start="373" selection-end="380" vertical-scroll-proportion="-1.9854015">
           <folding />
         </state>
       </provider>

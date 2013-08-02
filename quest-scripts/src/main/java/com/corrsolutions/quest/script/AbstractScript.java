@@ -8,6 +8,9 @@
 
 package com.corrsolutions.quest.script;
 
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import javax.sql.DataSource;
 import java.util.Properties;
 
 
@@ -15,15 +18,13 @@ public abstract class AbstractScript implements Script {
 
   private String name;
   private String description;
+  private JdbcTemplate questDataSource;
   private Properties properties;
 
-  public String getName() {
-    return name;
-  }
 
-  public Properties getProperties() {
-        return properties;
-    }
+   public String getName() {
+       return name;
+   }
 
   public String getDescription() {
     return description;
@@ -33,6 +34,14 @@ public abstract class AbstractScript implements Script {
     return properties.getProperty(sqlKey);
   }
 
+    public JdbcTemplate getQuestDataSource() {
+        return questDataSource;
+    }
+
+    public Properties getProperties() {
+        return properties;
+    }
+
   public void setName(String name) {
     this.name = name;
   }
@@ -40,6 +49,10 @@ public abstract class AbstractScript implements Script {
   public void setDescription(String description) {
     this.description = description;
   }
+
+   public void setQuestDataSource(DataSource dataSource) {
+     questDataSource = new JdbcTemplate(dataSource);
+   }
 
   public void setProperties(Properties properties){
     this.properties = properties;
