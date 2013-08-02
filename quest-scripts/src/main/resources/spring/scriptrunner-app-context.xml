@@ -12,11 +12,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--<import resource="classpath:spring/spring-services.xml"/>-->
-
-    <bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
-        <property name="locations" value="classpath:quest.properties"/>
-    </bean>
+    <import resource="classpath:spring/spring-dao.xml"/>
+    <import resource="classpath:spring/spring-services.xml"/>
 
     <bean class="com.corrsolutions.quest.script.ScriptRunner">
         <property name="properties" ref="properties"/>
@@ -28,9 +25,18 @@
                     <property name="name" value="LoadCountriesScript"/>
                     <property name="description" value="Loading geodata countries into DB"/>
                 </bean>
-
+                <bean class="com.corrsolutions.quest.script.impl.QuestionGeneratorScript">
+                    <constructor-arg name="geoDataService" ref="geoDataService"/>
+                    <property name="properties" ref="properties"/>
+                    <property name="name" value="QuestionGeneratorScript"/>
+                    <property name="description" value="Question Generator Script"/>
+                </bean>
             </list>
         </constructor-arg>
+    </bean>
+
+    <bean id="properties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="location" value="classpath:datasource.properties"/>
     </bean>
 
 </beans>

@@ -38,7 +38,7 @@ public class ScriptRunner {
         LOGGER.info("Running scripts...");
         try {
             for (Script script : scripts) {
-                LOGGER.info("Fetching user defined properties in quest.properties ...");
+                LOGGER.info("Fetching user defined properties in datasource.properties ...");
                 String scriptsToRunProp = properties.getProperty("quest.scripts.run");
                 scriptsToRun = scriptsToRunProp.split(",");
                 if (checkScriptsToRun(script.getName())){

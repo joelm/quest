@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ This file contains proprietary information of Rule Financial.
+  ~ Copying or reproduction without prior written approval is prohibited.
+  ~
+  ~ <b>Copyright</b> (c) 2013
+  ~ <b>Company</b> Corr Solutions
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="geoDataService" class="com.corrsolutions.quest.service.impl.GeoDataServiceImpl">
+        <property name="countryDao" ref="countryDao"/>
+    </bean>
+
+</beans>

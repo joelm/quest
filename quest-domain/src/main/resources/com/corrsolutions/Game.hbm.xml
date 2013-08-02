@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 29-Jul-2013 09:16:31 by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="com.corrsolutions.quest.domain.Game" table="game" catalog="quest">
+        <id name="gameId" type="java.lang.Integer">
+            <column name="game_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="gameUser" class="com.corrsolutions.quest.domain.GameUser" fetch="select">
+            <column name="user_id" not-null="true" />
+        </many-to-one>
+        <property name="score" type="int">
+            <column name="score" not-null="true" />
+        </property>
+        <property name="elapsedTime" type="string">
+            <column name="elapsed_time" length="50" />
+        </property>
+        <property name="createdOn" type="timestamp">
+            <column name="created_on" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>

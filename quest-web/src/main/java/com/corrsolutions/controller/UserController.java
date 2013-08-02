@@ -1,7 +1,7 @@
 package com.corrsolutions.controller;
 
-import com.corrsolutions.domain.GameUser;
-import com.corrsolutions.service.UserService;
+import com.corrsolutions.quest.domain.GameUser;
+import com.corrsolutions.quest.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

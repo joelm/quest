@@ -15,13 +15,17 @@
         <spring.version>3.2.3.RELEASE</spring.version>
         <spring.security.version>3.1.4.RELEASE</spring.security.version>
         <hibernate.version>4.1.5.Final</hibernate.version>
+
+        <config.path>config/quest-dev.properties</config.path>
+
         <org.slf4j.version>1.6.1</org.slf4j.version>
-        <config.path>resources/dev-mysql.properties</config.path>
     </properties>
 
     <modules>
-        <module>quest-application</module>
+        <module>quest-config</module>
         <module>quest-domain</module>
+        <module>quest-service</module>
+        <module>quest-application</module>
         <module>quest-web</module>
         <module>quest-scripts</module>
     </modules>
@@ -41,7 +45,32 @@
         <dependencies>
             <dependency>
                 <groupId>com.corrsolutions.quest</groupId>
+                <artifactId>quest-config</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.corrsolutions.quest</groupId>
+                <artifactId>quest-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.corrsolutions.quest</groupId>
+                <artifactId>quest-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.corrsolutions.quest</groupId>
                 <artifactId>quest-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.corrsolutions.quest</groupId>
+                <artifactId>quest-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.corrsolutions.quest</groupId>
+                <artifactId>quest-scripts</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <!--Spring dependencies -->
@@ -152,8 +181,13 @@
             <dependency>
                 <groupId>commons-dbcp</groupId>
                 <artifactId>commons-dbcp</artifactId>
+                <scope>runtime</scope>
                 <version>1.4</version>
-                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.1</version>
             </dependency>
             <!-- Jackson JSON bits-->
             <dependency>
@@ -253,6 +287,11 @@
                     </configuration>
                 </plugin>-->
                 <plugin>
+                    <groupId>com.rulefinancial.mojo</groupId>
+                    <artifactId>dirc-maven-plugin</artifactId>
+                    <version>1.0.0</version>
+                </plugin>
+                <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>build-helper-maven-plugin</artifactId>
                     <version>1.7</version>
@@ -272,7 +311,36 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.6.3.201306030806</version>
+                <configuration>
+                    <includes>
+                        <include>com.corrsolutions.quest.*</include>
+                    </includes>
+                    <destFile>${project.basedir}/../target/jacoco.exec</destFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
     </build>
+
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <config.path>config/quest-dev.properties</config.path>
+            </properties>
+        </profile>
+    </profiles>
 
     <repositories>
 

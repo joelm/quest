@@ -15,10 +15,12 @@
     <description>Application module which wires all the other modules together</description>
 
     <dependencies>
-<!--        <dependency>
+        <dependency>
             <groupId>com.corrsolutions.quest</groupId>
             <artifactId>quest-service</artifactId>
-        </dependency>-->
+            <version>${project.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>

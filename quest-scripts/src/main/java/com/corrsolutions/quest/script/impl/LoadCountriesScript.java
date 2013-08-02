@@ -32,7 +32,7 @@ public class LoadCountriesScript extends AbstractScript{
     public static void main(String[] args){
         Properties properties = new Properties();
         try {
-            properties.load(new FileInputStream("C:\\_joel\\dev\\IdeaProjects\\quest\\quest-scripts\\src\\main\\config\\quest.properties"));
+            properties.load(new FileInputStream("C:\\_joel\\dev\\IdeaProjects\\quest\\quest-scripts\\src\\main\\config\\datasource.properties"));
         } catch (IOException e) {
             System.out.println(e.getLocalizedMessage());
         }

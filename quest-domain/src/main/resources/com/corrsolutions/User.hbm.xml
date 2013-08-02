@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-access="field" package="com.corrsolutions.quest.domain">
+  <class name="User" table="game_user">
+    <id column="user_id" name="id">
+      <generator class="increment"/>
+    </id>
+    <property name="id" unique="true" not-null="true"/>
+    <property name="userName"/>
+    <property name="firstName"/>
+    <property name="lastName"/>
+    <property name="password" />
+    <property name="email" />
+    <property name="createdOn" />
+  </class>
+
+  
+<!--  <database-object>
+    <create>
+      create unique index ck1_consultant_so_id on quest.game_user(user_id)
+    </create>
+    <drop>
+      drop index ck1_consultant_so_id
+    </drop>
+  </database-object>-->
+</hibernate-mapping>

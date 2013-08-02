@@ -81,8 +81,13 @@
         </dependency>
     </dependencies>
 
-  <!--  <build>
-        <plugins>
+    <build>
+
+        <filters>
+            <filter>../quest-config/src/main/resources/${config.path}</filter>
+        </filters>
+
+       <!-- <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>hibernate3-maven-plugin</artifactId>
@@ -166,7 +171,7 @@
                                 </component>
                             </components>
                             <componentProperties>
-                                &lt;!&ndash; <packagename>com.corrsolutions.dao.impl</packagename>&ndash;&gt;
+                                &lt;!&ndash; <packagename>com.corrsolutions.quest.dao.impl</packagename>&ndash;&gt;
                                 <configurationfile>target/hibernate3/generated-mappings/hibernate.cfg.xml</configurationfile>
                                 <templatepath>src/main/resources/spring</templatepath>
                                 <ejb3>true</ejb3>
@@ -185,7 +190,7 @@
                 </dependencies>
 
             </plugin>
-        </plugins>
+        </plugins>-->
     </build>
--->
+
 </project>
