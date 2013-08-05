@@ -22,7 +22,7 @@
     </bean>
 
     <bean id="questJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="questDataSource"/>
+        <property name="dataSource" ref="questJdbcDataSource"/>
     </bean>
 
 

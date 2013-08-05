@@ -11,17 +11,17 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        ">
 
-  <!--<import resource="classpath:spring/test-sharpowl-datasource.xml"/>-->
+  <!--<import resource="classpath:spring/test-datasource.xml"/>-->
 
   <bean id="questDataSource" destroy-method="close" class="org.apache.commons.dbcp.BasicDataSource">
     <description>
       Data source used for UNIT tests for Matrix DAOs. Making this configurable gives us the option of running unit
       tests against H2 (default, fast) or MySQL (slower, but closer to the target platform).
     </description>
-    <property name="driverClassName" value="${datasource.matrix.driverClassName}"/>
-    <property name="url" value="${datasource.matrix.url}"/>
-    <property name="username" value="${datasource.matrix.username}"/>
-    <property name="password" value="${datasource.matrix.password}"/>
+    <property name="driverClassName" value="${datasource.quest.driverClassName}"/>
+    <property name="url" value="${datasource.quest.url}"/>
+    <property name="username" value="${datasource.quest.username}"/>
+    <property name="password" value="${datasource.quest.password}"/>
   </bean>
 
   <bean id="testSessionFactory"  class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
