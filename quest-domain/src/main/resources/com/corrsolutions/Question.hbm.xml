@@ -1,9 +1,11 @@
 <?xml version="1.0"?>
+
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
-"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
-<!-- Generated 29-Jul-2013 09:16:31 by Hibernate Tools 3.2.2.GA -->
-<hibernate-mapping>
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-access="field" package="com.corrsolutions.quest.domain">
     <class name="com.corrsolutions.quest.domain.Question" table="question" catalog="quest">
+
         <id name="questionId" type="java.lang.Integer">
             <column name="question_id" />
             <generator class="identity" />

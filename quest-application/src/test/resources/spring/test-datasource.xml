@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ This file contains proprietary information of Rule Financial.
+  ~ Copying or reproduction without prior written approval is prohibited.
+  ~
+  ~ <b>Copyright</b> (c) 2013
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+  <bean id="questDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <property name="driverClassName" value="${datasource.quest.driverClassName}"/>
+    <property name="url" value="${datasource.quest.url}"/>
+    <property name="username" value="${datasource.quest.username}"/>
+    <property name="password" value="${datasource.quest.password}"/>
+  </bean>
+
+  <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="location" value="classpath:${config.path}"/>
+  </bean>
+
+  <bean id="questJdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+    <property name="dataSource" ref="questDataSource"/>
+  </bean>
+</beans>

@@ -18,34 +18,15 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 
-@Entity
-@Table(name="game_user",catalog="quest")
 public class GameUser  implements Serializable {
 
-    @Id @GeneratedValue(strategy=IDENTITY)
-    @Column(name="user_id", nullable=false)
     private Integer userId;
-
-    @Column(name="username", nullable=false, length=50)
     private String userName;
-
-    @Column(name="first_name", length=50)
     private String firstName;
-
-    @Column(name="last_name", length=50)
     private String lastName;
-
-    @Column(name="email", length=50)
     private String email;
-
-    @Column(name="password", nullable=false, length=50)
     private String password;
-
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name="created_on", length=19)
     private Date createdOn;
-
-    @OneToMany(fetch=FetchType.LAZY, mappedBy="gameUser")
     private Set<Game> games = new HashSet<Game>(0);
 
 

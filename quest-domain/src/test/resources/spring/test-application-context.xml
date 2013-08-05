@@ -1,0 +1,51 @@
+<!--
+  ~ This file contains proprietary information of Rule Financial.
+  ~ Copying or reproduction without prior written approval is prohibited.
+  ~
+  ~ <b>Copyright</b> (c) 2012
+  ~ <b>Company</b> Corr Solutions
+  -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       ">
+
+  <!--<import resource="classpath:spring/test-sharpowl-datasource.xml"/>-->
+
+  <bean id="questDataSource" destroy-method="close" class="org.apache.commons.dbcp.BasicDataSource">
+    <description>
+      Data source used for UNIT tests for Matrix DAOs. Making this configurable gives us the option of running unit
+      tests against H2 (default, fast) or MySQL (slower, but closer to the target platform).
+    </description>
+    <property name="driverClassName" value="${datasource.matrix.driverClassName}"/>
+    <property name="url" value="${datasource.matrix.url}"/>
+    <property name="username" value="${datasource.matrix.username}"/>
+    <property name="password" value="${datasource.matrix.password}"/>
+  </bean>
+
+  <bean id="testSessionFactory"  class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <description>
+      Hibernate session factory used for unit tests for Matrix DAOs. Connects to testMatrixDataSource. Therefore
+      Hibernate properties (including the dialect) are also configurable.
+    </description>
+    <property name="dataSource" ref="questDataSource" />
+    <property name="configLocation" value="classpath:hibernate.cfg.xml" />
+    <property name="hibernateProperties">
+      <props>
+        <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+        <prop key="hibernate.show_sql">${hibernate.sql.show}</prop>
+        <prop key="hibernate.format_sql">${hibernate.sql.format}</prop>
+        <prop key="hibernate.use_sql_comments">${hibernate.sql.comments}</prop>
+      </props>
+    </property>
+    <property name="schemaUpdate" value="${hibernate.schema.update}"/>
+    <property name="namingStrategy">
+      <bean class="org.hibernate.cfg.ImprovedNamingStrategy"/>
+    </property>
+  </bean>
+  
+  <bean id="testTransactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+    <property name="sessionFactory" ref="testSessionFactory"/>
+  </bean>
+</beans>
