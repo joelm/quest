@@ -1,48 +1,29 @@
 package com.corrsolutions.quest.domain;
 
+import java.io.Serializable;
 import java.util.Date;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import static javax.persistence.GenerationType.IDENTITY;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import java.util.Set;
 
 
-@Entity @Table(name="question",catalog="quest")
-public class Question  implements java.io.Serializable {
+public class Question  implements Serializable {
 
-    @Id @GeneratedValue(strategy=IDENTITY)
-    @Column(name="question_id", nullable=false)
     private Integer questionId;
-
-    @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="answer_id", nullable=false)
-    private Answer answer;
-
-    @Column(name="question", nullable=false, length=50)
     private String question;
-
-    @Column(name="category", length=50)
     private String category;
-
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name="created_on", length=19)
+    private Answer answer;
     private Date createdOn;
+    private Set<QuestionAnswer> questionAnswers;
+
 
     public Question() {
     }
 
-	
-    public Question(Answer answer, String question) {
+    public Question(Integer questionId, Answer answer, String question) {
+        this.questionId = questionId;
         this.answer = answer;
         this.question = question;
     }
+
     public Question(Answer answer, String question, String category, Date createdOn) {
        this.answer = answer;
        this.question = question;
@@ -90,9 +71,13 @@ public class Question  implements java.io.Serializable {
         this.createdOn = createdOn;
     }
 
+    public Set<QuestionAnswer> getQuestionAnswers() {
+        return questionAnswers;
+    }
 
-
-
+    public void setQuestionAnswers(Set<QuestionAnswer> questionAnswers) {
+        this.questionAnswers = questionAnswers;
+    }
 }
 
 

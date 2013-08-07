@@ -10,11 +10,14 @@ USE quest;
 
 -- constraints
 ALTER TABLE game DROP FOREIGN KEY game_user_fk;
-ALTER TABLE game DROP FOREIGN KEY answer_fk;
+ALTER TABLE question_answer DROP FOREIGN KEY qa_question_fk;
+ALTER TABLE question_answer DROP FOREIGN KEY qa_answer_fk;
+ALTER TABLE question DROP FOREIGN KEY answer_fk;
 
 --drop these in reverse order
 DROP TABLE game_user;
 DROP TABLE game;
+DROP TABLE question_answer;
 DROP TABLE question;
 DROP TABLE answer;
 
@@ -59,6 +62,17 @@ CREATE TABLE question (
   created_on datetime DEFAULT NULL,
   PRIMARY KEY (question_id),
   CONSTRAINT answer_fk FOREIGN KEY (answer_id) REFERENCES answer(answer_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE question_answer (
+  question_answer_id INT NOT NULL AUTO_INCREMENT,
+  question_id INT NOT NULL,
+  answer_id INT NOT NULL,
+  created_on datetime DEFAULT NULL,
+  PRIMARY KEY (question_answer_id),
+  CONSTRAINT qa_question_fk FOREIGN KEY (question_id) REFERENCES question(question_id),
+  CONSTRAINT qa_answer_fk FOREIGN KEY (answer_id) REFERENCES answer(answer_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 

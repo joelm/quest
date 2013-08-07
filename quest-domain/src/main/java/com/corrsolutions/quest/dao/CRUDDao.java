@@ -1,4 +1,4 @@
-package com.corrsolutions.geodata.dao;
+package com.corrsolutions.quest.dao;
 
 
 import java.io.Serializable;
@@ -19,7 +19,7 @@ public interface CRUDDao<T> {
      * @param id for searching the unique entity.
      * @return <T> typed object.
      */
-    T read(Serializable id);
+    Object read(Serializable id);
 
     /**
      * Delete method marks the object as deleted.

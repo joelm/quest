@@ -176,5 +176,26 @@ public class Country {
     }
 
 
+    @Override
+    public String toString() {
+        return "Country{" +
+                "countryId=" + countryId +
+                ", country='" + country + '\'' +
+                ", FIPS104='" + FIPS104 + '\'' +
+                ", iso2='" + iso2 + '\'' +
+                ", iso3='" + iso3 + '\'' +
+                ", ison='" + ison + '\'' +
+                ", internet='" + internet + '\'' +
+                ", capital='" + capital + '\'' +
+                ", mapRef='" + mapRef + '\'' +
+                ", nationalitySingular='" + nationalitySingular + '\'' +
+                ", nationalityPlural='" + nationalityPlural + '\'' +
+                ", currency='" + currency + '\'' +
+                ", currencyCode='" + currencyCode + '\'' +
+                ", population=" + population +
+                ", title='" + title + '\'' +
+                ", Comment='" + Comment + '\'' +
+                '}';
+    }
 
 }

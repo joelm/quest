@@ -2,7 +2,9 @@ package com.corrsolutions.quest.script.impl;
 
 
 import com.corrsolutions.geodata.dao.CountryDao;
+import com.corrsolutions.geodata.dao.springjdbc.CitySpringJdbcDao;
 import com.corrsolutions.geodata.dao.springjdbc.CountrySpringJdbcDao;
+import com.corrsolutions.quest.dao.QuestionDao;
 import com.corrsolutions.quest.script.AbstractScriptRunnerTest;
 import com.corrsolutions.quest.service.GeoDataService;
 import com.corrsolutions.quest.service.impl.GeoDataServiceImpl;
@@ -26,14 +28,24 @@ public class QuestionGeneratorScriptTest extends AbstractScriptRunnerTest {
     @Autowired
     private CountrySpringJdbcDao countryDao;
 
+    @Autowired
+    private CitySpringJdbcDao cityDao;
+
+    @Autowired
+    private QuestionDao questionDao;
+
     @Before
     public void init() {
 
         geoDataService.setCountryDao(countryDao);
+        geoDataService.setCityDao(cityDao);
 
         try {
-            initialise(questionGeneratorScript = new QuestionGeneratorScript(geoDataService));
+            initialise(questionGeneratorScript =
+                    new QuestionGeneratorScript(geoDataService, questionDao));
             countryDao.setProperties(questionGeneratorScript.getProperties());
+            cityDao.setProperties(questionGeneratorScript.getProperties());
+
         } catch (IOException e) {
             System.out.println(e);
             LOGGER.info("QuestionGeneratorScriptTest.init() " + e);
@@ -44,9 +56,6 @@ public class QuestionGeneratorScriptTest extends AbstractScriptRunnerTest {
     @SuppressWarnings("unchecked")
     @Test
     public void testRetriveCountriesAndGenrateQuestions() {
-
-
         questionGeneratorScript.execute();
-
     }
 }

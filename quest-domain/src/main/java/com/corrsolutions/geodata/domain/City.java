@@ -13,6 +13,23 @@ public class City {
     private Integer DmaId;
     private String code;
 
+    public City() {
+    }
+
+    public City(Integer cityId, Integer countryId, Integer regionId, String city,
+                Float latitude, Float longitude, String timeZone, Integer dmaId,
+                String code) {
+        this.cityId = cityId;
+        this.countryId = countryId;
+        this.regionId = regionId;
+        City = city;
+        this.latitude = latitude;
+        this.longitude = longitude;
+        this.timeZone = timeZone;
+
+        DmaId = dmaId;
+        this.code = code;
+    }
 
     public Integer getCityId() {
         return cityId;
@@ -86,6 +103,19 @@ public class City {
         this.code = code;
     }
 
-
+    @Override
+    public String toString() {
+        return "City{" +
+                "cityId=" + cityId +
+                ", countryId=" + countryId +
+                ", regionId=" + regionId +
+                ", City='" + City + '\'' +
+                ", latitude=" + latitude +
+                ", longitude=" + longitude +
+                ", timeZone='" + timeZone + '\'' +
+                ", DmaId=" + DmaId +
+                ", code='" + code + '\'' +
+                '}';
+    }
 
 }

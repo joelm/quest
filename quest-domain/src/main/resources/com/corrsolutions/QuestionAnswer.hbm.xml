@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-access="field" package="com.corrsolutions.quest.domain">
+    <class name="com.corrsolutions.quest.domain.QuestionAnswer" table="question_answer"
+           catalog="quest">
+
+        <id name="questAnswerId" type="java.lang.Integer">
+            <column name="question_id" />
+            <generator class="identity" />
+        </id>
+
+        <property name="questionId" type="java.lang.Integer">
+            <column name="question_id"  not-null="true" />
+        </property>
+
+        <property name="answerId" type="java.lang.Integer">
+            <column name="answer_id"  not-null="true" />
+        </property>
+
+        <property name="createdOn" type="timestamp">
+            <column name="created_on" length="19" />
+        </property>
+
+    </class>
+</hibernate-mapping>

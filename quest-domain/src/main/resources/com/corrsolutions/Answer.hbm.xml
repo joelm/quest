@@ -10,17 +10,14 @@
             <column name="answer_id" />
             <generator class="identity" />
         </id>
+
         <property name="answer" type="string">
             <column name="answer" length="50" not-null="true" />
         </property>
+
         <property name="createdOn" type="timestamp">
             <column name="created_on" length="19" />
         </property>
-        <set name="questions" inverse="true">
-            <key>
-                <column name="answer_id" not-null="true" />
-            </key>
-            <one-to-many class="com.corrsolutions.quest.domain.Question" />
-        </set>
+
     </class>
 </hibernate-mapping>

@@ -47,6 +47,10 @@
   <bean id="gameUserDao" class="com.corrsolutions.quest.dao.impl.GameUserDaoImpl">
  <!--     <constructor-arg name="sessionFactory" ref="hibernateSessionFactory" />-->
   </bean>
+
+  <bean id="questionDao" class="com.corrsolutions.quest.dao.hibernate.QuestionHibernateDao">
+<!--    <constructor-arg name="sessionFactory" ref="hibernateSessionFactory" />-->
+  </bean>
   
   <!--Spring JDBC Daos -->
   <bean id="countryDao" class="com.corrsolutions.geodata.dao.springjdbc.CountrySpringJdbcDao">
@@ -54,5 +58,9 @@
       <property name="properties" ref="properties"/>
   </bean>
 
+  <bean id="cityDao" class="com.corrsolutions.geodata.dao.springjdbc.CitySpringJdbcDao">
+     <property name="jdbcTemplate" ref="questJdbcTemplate" />
+     <property name="properties" ref="properties"/>
+   </bean>
 
 </beans>

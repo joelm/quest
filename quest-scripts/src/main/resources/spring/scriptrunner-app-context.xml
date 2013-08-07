@@ -27,6 +27,7 @@
                 </bean>
                 <bean class="com.corrsolutions.quest.script.impl.QuestionGeneratorScript">
                     <constructor-arg name="geoDataService" ref="geoDataService"/>
+                    <constructor-arg name="questionDao" ref="questionDao" />
                     <property name="properties" ref="properties"/>
                     <property name="name" value="QuestionGeneratorScript"/>
                     <property name="description" value="Question Generator Script"/>

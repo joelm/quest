@@ -14,6 +14,7 @@
 
     <bean id="geoDataService" class="com.corrsolutions.quest.service.impl.GeoDataServiceImpl">
         <property name="countryDao" ref="countryDao"/>
+        <property name="cityDao" ref="cityDao"/>
     </bean>
 
 </beans>

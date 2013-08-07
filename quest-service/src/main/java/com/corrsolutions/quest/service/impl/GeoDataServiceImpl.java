@@ -1,6 +1,8 @@
 package com.corrsolutions.quest.service.impl;
 
+import com.corrsolutions.geodata.dao.CityDao;
 import com.corrsolutions.geodata.dao.CountryDao;
+import com.corrsolutions.geodata.domain.City;
 import com.corrsolutions.geodata.domain.Country;
 import com.corrsolutions.quest.service.GeoDataService;
 import org.slf4j.Logger;
@@ -15,10 +17,17 @@ public class GeoDataServiceImpl implements GeoDataService {
 
     private CountryDao countryDao;
 
+    private CityDao cityDao;
+
 
     @Override
     public List<Country> getAllCountries(){
         return countryDao.getAllCountries();
+    }
+
+    @Override
+    public List<City> getAllCities(){
+        return cityDao.getAllCities();
     }
 
 
@@ -27,4 +36,8 @@ public class GeoDataServiceImpl implements GeoDataService {
         this.countryDao = countryDao;
     }
 
+    @Required
+    public void setCityDao(CityDao cityDao){
+        this.cityDao = cityDao;
+    }
 }

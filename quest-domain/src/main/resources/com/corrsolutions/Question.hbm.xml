@@ -10,17 +10,35 @@
             <column name="question_id" />
             <generator class="identity" />
         </id>
-        <many-to-one name="answer" class="com.corrsolutions.quest.domain.Answer" fetch="select">
+
+<!--        <many-to-one name="answer" class="com.corrsolutions.quest.domain.Answer" fetch="select">
             <column name="answer_id" not-null="true" />
-        </many-to-one>
+        </many-to-one>-->
+
         <property name="question" type="string">
             <column name="question" length="50" not-null="true" />
         </property>
+
         <property name="category" type="string">
             <column name="category" length="50" />
         </property>
+
+        <one-to-one name="answer" class="com.corrsolutions.quest.domain.Answer"
+                    cascade="save-update" fetch="join" foreign-key="answer_fk" />
+
         <property name="createdOn" type="timestamp">
             <column name="created_on" length="19" />
         </property>
+
+        <set name="questionAnswers" table="question_answer" inverse="false" lazy="true" fetch="subselect">
+            <key foreign-key="qa_question_fk">
+                <column name="question_id" not-null="true" />
+            </key>
+            <many-to-many entity-name="com.corrsolutions.quest.domain.Answer"
+                          foreign-key="qa_answer_fk">
+                <column name="answer_id" not-null="true" />
+            </many-to-many>
+        </set>
+
     </class>
 </hibernate-mapping>
